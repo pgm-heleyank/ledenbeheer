@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  api:
+    image: webgriffe/php-apache-base
+    ports:
+     - '8000:80'
+    volumes:
+      - ./api:/var/www/html
